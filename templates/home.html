@@ -1,6 +1,15 @@
 <!doctype html5>
 <html>
+    <head>
+        <link rel='stylesheet' type='text/css' href="{{url_for('static', filename="css/style.css") }}" >
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </head>
     <body>
-        <p>BLERP BLERP</p>
+        <img id="gif" src="{{ d['url'] }}"></img>
+        <div id="caption">
+            <form id="searchform">
+            <input id="search" type=search placeholder="{{ d['search'] }}"></input>
+            </form>
+        </div>
     </body>
 </html>
